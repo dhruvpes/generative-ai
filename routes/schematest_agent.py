@@ -3,7 +3,7 @@ from langchain_core.output_parsers import JsonOutputParser
 from pydantic import BaseModel, Field
 from langchain_groq import ChatGroq
 
-# Define schema with Pydantic
+# Define schema with Pydantics
 class CompanyInfo(BaseModel):
     company_name: str = Field(..., description="The name of the company")
     headquarters: str = Field(..., description="Location of HQ")
